@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,10 +13,12 @@
     "@ethersproject/abstract-provider": "^5.7.0",
     "@lifi/types": "^11.2.0",
     "@typegoose/typegoose": "^12.1.0",
+    "@types/body-parser": "^1.19.5",
     "body-parser": "^1.20.2",
-    "dotenv": "^16.4.1",
-    "ethers": "^6.10.0",
+    "dotenv": "^16.4.2",
+    "ethers": "^5.7.2",
     "express": "^4.18.2",
+    "lifi-contract-types": "https://github.com/lifinance/lifi-contract-types#main",
     "mongoose": "^8.1.1"
   },
   "devDependencies": {

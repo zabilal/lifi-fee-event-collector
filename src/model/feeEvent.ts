@@ -1,17 +1,17 @@
-import {prop, getModelForClass, Prop} from "@typegoose/typegoose";
+import {prop, getModelForClass} from "@typegoose/typegoose";
 
 export class FeeEvent {
   @prop( {required: true} )
-  token!: string;
+  token?: string;
 
   @prop({ required: true })
-  integrator!: string;
+  integrator?: string;
 
   @prop({ required: true })
-  integratorFee!: string;
+  integratorFee?: string;
 
   @prop({ required: true })
-  lifiFee!: string;
+  lifiFee?: string;
 }
 
 export const FeeEventModel = getModelForClass(FeeEvent);
